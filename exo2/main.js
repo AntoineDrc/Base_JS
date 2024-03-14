@@ -9,7 +9,7 @@
     {
         carre.addEventListener('click', function()
         {
-    
+            
             // Obtenir le style CSS d'une class carre
             let style = getComputedStyle(carre);
             let bgColor = style.backgroundColor;

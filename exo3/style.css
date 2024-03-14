@@ -1,0 +1,13 @@
+#carres {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.carre {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    transition: 0.7s;
+}
