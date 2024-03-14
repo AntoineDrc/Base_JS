@@ -1,0 +1,39 @@
+#follow_us {
+    height: 50vh;
+    background-color: gray;
+}
+
+.cards {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.card_fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 170px;
+    width: 170px;
+}
+
+.card_twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 170px;
+    width: 170px;
+}
+
+.card_insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 170px;
+    width: 170px;
+}
