@@ -5,33 +5,19 @@
     gap: 20px;
 }
 
-.carre1 {
+.carre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     width: 200px;
-    background-color: rgba(72, 193, 152, 0.47);
-}
-
-.carre2 {
-    height: 200px;
-    width: 200px;
-    background-color: rgba(98, 72, 193, 0.47);
-}
-
-.carre3 {
-    height: 200px;
-    width: 200px;
-    background-color: rgba(156, 36, 124, 0.47);
-}
-
-.carre4 {
-    height: 200px;
-    width: 200px;
-    background-color: rgba(131, 188, 38, 0.47);
+    margin-bottom: 20px;
 }
 
 .carre_bas {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     width: 200px;
-    background-color: rgba(236, 8, 8, 0.47);
 }
