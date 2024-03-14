@@ -3,7 +3,7 @@
     background-color: gray;
 }
 
-.cards {
+#cards {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -11,29 +11,22 @@
     gap: 25px;
 }
 
-.card_fb {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
     height: 170px;
     width: 170px;
 }
 
-.card_twitter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    height: 170px;
-    width: 170px;
+#insta {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
-.card_insta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    height: 170px;
-    width: 170px;
+#fb {
+    background: linear-gradient(120deg, #3b5998, white);
+}
+
+#twitter {
+    background: linear-gradient(45deg, #66757f, #00acee, #36d8ff, #f5f8fa, #ffffff);
 }
