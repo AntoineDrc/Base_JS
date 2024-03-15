@@ -1,6 +1,7 @@
 #follow_us {
     height: 50vh;
     background-color: gray;
+    transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 #cards {
@@ -18,6 +19,20 @@
     height: 170px;
     width: 170px;
     transition: 0.5s;
+}
+
+.card.active {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+span {
+    opacity : 0;
+    transition: 0.5s;
+}
+
+.span.active {
+    opacity: 1;
 }
 
 #Insta {

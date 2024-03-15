@@ -2,69 +2,39 @@
 let fond = document.getElementById('follow_us');
 let cards = document.querySelectorAll('.card');
 
-// Déclarer une variable qui va changer le statut du booléen
-let bool = false;
-
 // Boucle for each pour parcrourir tout les élèments de la class "cards"
 cards.forEach(function(card)
 {
        // Ajouter un écouteur d'évènement sur chaque élèment portant la class carre
             card.addEventListener('click', function()
             {   
-                // Obtenir le style de l'arrière-plan de la carte cliquée
+                // Cible la balise span
+                let span = card.querySelector('span')
+                
+                // Récupère le background gadient
                 let styleCard = getComputedStyle(card);
 
-                // Passer de true à false à chaque clic
-                bool = !bool;
-
-                // Change la couleur du fond
-                if(!bool)
+                // Vérifie si la classe "active" est présente ou non
+                if (card.classList.contains('active'))
                 {
+                    card.classList.remove('active');
+                } else 
+                // Si c'est le cas, appliquer le style css pour "active"
+                {
+                    card.classList.add('active');
+                }
+
+                // Appliquer la couleur de fond de la card et le nom du réseau social lorsque "active"
+                if (card.classList.contains('active'))
+                {   
+                    
+
                     fond.style.backgroundImage = styleCard.backgroundImage;
+                    span.style.opacity = 1;
                 } else 
                 {
                     fond.style.backgroundImage = '';
-                }
-
-                // Arrondir les bords
-                if(!bool)
-                {
-                    card.style.borderRadius = '20px';
-                } else 
-                {
-                    card.style.borderRadius = '';
-                }
-
-                // Appliquer une ombre
-                if(!bool)
-                {
-                    card.style.boxShadow = 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px';
-                } else 
-                {
-                    card.style.boxShadow = '';
-                }
-
-                // Le nom du réseau social apparait
-
-                // On récupère le nom du réseau dans l'id
-                let nomReseau = card.getAttribute('id');
-
-                // Création d'un enfant "span" pour afficher le nom du réseau
-                let nomElement = document.createElement('span');
-
-                // On ajoute la span créé comment enfant le la class "card"
-                card.appendChild(nomElement);
-
-
-                if (!bool)
-                {
-                    nomElement.textContent = nomReseau;
-                } else
-                {
-                    if (nomElement)
-                    {
-                        card.removeChild(nomElement);
-                    }
+                    span.style.opacity = 0;
                 }
             });
 });
