@@ -17,16 +17,17 @@
     align-items: center;
     height: 170px;
     width: 170px;
+    transition: 0.5s;
 }
 
-#insta {
+#Insta {
     background: linear-gradient(45deg, #405DE6, #5851DB, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
-#fb {
+#Facebook {
     background: linear-gradient(120deg, #3b5998, white);
 }
 
-#twitter {
+#Twitter {
     background: linear-gradient(45deg, #66757f, #00acee, #36d8ff, #f5f8fa, #ffffff);
 }
