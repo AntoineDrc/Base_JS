@@ -27,8 +27,6 @@ cards.forEach(function(card)
                 // Appliquer la couleur de fond de la card et le nom du réseau social lorsque "active"
                 if (card.classList.contains('active'))
                 {   
-                    
-
                     fond.style.backgroundImage = styleCard.backgroundImage;
                     span.style.opacity = 1;
                 } else 
