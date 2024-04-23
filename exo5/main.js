@@ -3,10 +3,9 @@ let conteneurCitations = document.querySelector('.auteurs');
 // Crée un Id pour chaque nouveau paragraphe
 let id = 1;
 
-for (let cle in quotes)
-{
+for (let cle in quotes) {
     let valeur = quotes[cle];
-    
+
     // Crée un paragraphe pour chaque citation
     let paragraphe = document.createElement('p');
 
@@ -22,16 +21,13 @@ for (let cle in quotes)
     boutonFavoris.innerText = "Favori";
 
     // Créé un écouteur d'évènement qui va ajouter la class favori à chaque click
-    boutonFavoris.addEventListener("click", function()
-    {
+    boutonFavoris.addEventListener("click", function () {
         paragraphe.classList.toggle('favori');
 
         // Ajoute au local storage
-        if (paragraphe.classList.contains('favori'))
-        {
+        if (paragraphe.classList.contains('favori')) {
             localStorage.setItem(paragraphe.id, 'true');
-        } else
-        {
+        } else {
             localStorage.removeItem(paragraphe.id,);
         }
     });
